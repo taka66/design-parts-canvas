@@ -1,0 +1,36 @@
+html {
+  font-size: 20px;
+	font-family: Consolas, 'Courier New', Courier, Monaco, monospace;
+}
+
+@keyframes blink-smooth { 50% { color: transparent } }
+@keyframes blink-smooth2 { to { color: transparent } }
+
+
+.blink1 {
+    animation:1s blink-smooth 3;
+}
+
+.blink2 {
+    animation:1s blink-smooth2 3;
+}
+
+.blink-smooth {
+    animation:1s blink-smooth2 6 alternate;
+}
+
+@keyframes typing {
+  from { width : 0 }
+}
+
+@keyframes caret {
+  50% { border-color: transparent; }
+}
+
+h1 {
+  /*width: 15ch;*/
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: .05em solid;
+  animation: typing 6s, caret 1s infinite;
+}
